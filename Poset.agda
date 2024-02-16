@@ -75,7 +75,6 @@ Monad→Closure {𝑃 = 𝑃} 𝑀 = record
         open Poset 𝑃
         open Monad 𝑀
         open Functor F
-
 -- full proof
 Closure↔Monad : ∀ {𝑃 : Poset o ℓ₁ ℓ₂} → (Closure 𝑃 → Monad {o} {ℓ₂} {e} (Thin e 𝑃)) ∧ (Monad {o} {ℓ₂} {e} (Thin e 𝑃) → Closure 𝑃)
 Closure↔Monad = Closure→Monad , Monad→Closure
