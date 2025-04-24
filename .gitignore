@@ -1,2 +1,5 @@
 *.agdai
 MAlonzo/**
+agda-poset
+.vscode
+.direnv/
